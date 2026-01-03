@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Rise - Digital AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --te-bg: #E4E4E4;
+        --te-surface: #F1F1F1;
+        --te-orange: #FF5500;
+        --te-black: #111111;
+        --te-text: #333333;
+        --te-border: #D1D1D1;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--te-bg);
+        color: var(--te-text);
+        /* Subtle grain texture overlay could go here */
+      }
+
+      /* Typography */
+      h1, h2, h3, .font-display {
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+      
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+        letter-spacing: -0.05em;
+      }
+
+      /* Global Overrides */
+      .bg-white {
+        background-color: var(--te-surface) !important;
+      }
+      
+      /* Buttons */
+      button {
+        border-radius: 9999px !important; /* Pill shape */
+        font-family: 'JetBrains Mono', monospace !important;
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.2s ease;
+      }
+      
+      button:active {
+        transform: scale(0.97);
+      }
+
+      /* Primary Button (Orange) */
+      .bg-\[\#FF6B00\], .bg-red-600, .bg-indigo-600, .bg-blue-600, .bg-teal-600, .bg-emerald-600, .bg-lime-600, .bg-orange-600, .bg-cyan-600, .bg-purple-600, .bg-pink-600, .bg-orange-500 {
+        background-color: var(--te-orange) !important;
+        color: white !important;
+        box-shadow: none !important;
+      }
+      
+      .bg-black, .bg-\[\#1A1A1A\] {
+        background-color: var(--te-black) !important;
+        color: white !important;
+      }
+
+      /* Inputs */
+      input, textarea, select {
+        background-color: #FFFFFF !important;
+        border: 1px solid transparent !important;
+        border-radius: 8px !important;
+        padding: 12px 16px !important;
+        font-family: 'JetBrains Mono', monospace !important;
+        font-size: 0.9rem;
+      }
+      input:focus, textarea:focus, select:focus {
+        outline: 2px solid var(--te-orange) !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CCC;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+
+      /* Utility classes for the specific style */
+      .te-card {
+        background-color: var(--te-surface);
+        border-radius: 24px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      }
+      
+      .te-border {
+        border: 1px solid var(--te-border);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
